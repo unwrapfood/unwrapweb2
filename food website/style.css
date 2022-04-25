@@ -226,6 +226,8 @@ color: rgb(227, 224, 13);
 .footer{
   background:rgb(13, 14, 11);
   text-align: center;
+  position: absolute;
+  width: 100%;
 }
 
 .footer .share{
