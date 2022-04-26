@@ -28,8 +28,13 @@ html{
 
 body{
   background:#820ea2;
+  height:100%;
 }
 
+section{
+  padding:2rem 9%;
+ 
+}
 
 
 .heading{
@@ -111,6 +116,7 @@ header .navbar a{
 
 header .navbar a:hover{
   color:rgb(126, 9, 126);
+  
 }
 
 #menu-bar{
@@ -136,11 +142,11 @@ header .navbar a:hover{
   color: aqua;
 
 }
-.feature{
+#feature{
  width: 100%;
  height: 100%;
  overflow: hidden;
- position: relative;
+ position: absolute;
  animation: animate 20s infinite ease-in-out;
  background-size: cover;
  background-image: url(./images/h1.jpg);
@@ -169,11 +175,11 @@ header .navbar a:hover{
   }
 }
 
-.feature .heading{
+#feature .heading{
   color: #14f908;
 }
 
-.feature .card-container{
+#feature .card-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,8 +188,9 @@ header .navbar a:hover{
   width: 100%;
 }
 
-.feature .card-container .card{
-    width: 23rem;
+#feature .card-container .card{
+    width: 30rem;
+    height: 50rem;
     margin: 3.5rem;
    padding: 2rem;
     background: rgb(80, 2, 59);
@@ -193,30 +200,30 @@ header .navbar a:hover{
     overflow: hidden;
     position: relative;
 }
-.feature .card-container .card img{
+#feature .card-container .card img{
     height: 15rem;
     width: 100%;
     object-fit: cover;
 }
 
-.feature .card-container .content{
+#feature .card-container .content{
    padding-top: 1rem;
     padding-bottom: .7rem;
     text-align: center;
 }
 
-.feature .card-container .content .title{
+#feature .card-container .content .title{
      font-size: 2.5rem;
     color: rgb(237, 255, 247);
 }
 
-.feature .card-container .content p{
+#feature .card-container .content p{
     color: rgb(255, 178, 11);
     font-size: 1.1rem;
     padding: .4rem;
 }
 
-.feature .card-container .content .btn{
+#feature .card-container .content .btn{
     font-size: 1.5rem;
     margin-top: 1rem;
     height: 3rem;
@@ -230,13 +237,13 @@ header .navbar a:hover{
     cursor: pointer;
     transition: .2s linear;
 }
-.feature .card-container .content .btn:hover{
+#feature .card-container .content .btn:hover{
 background: none;
 border: 2px solid rgb(216, 230, 28);
 color: rgb(227, 224, 13);
 }
 
-.feature .card-container .card .discount{
+#feature .card-container .card .discount{
     position: absolute;
     top: 1rem ;
     left: 1rem;
@@ -252,31 +259,29 @@ color: rgb(227, 224, 13);
 }
 
 
-.footer{
+#footer{
   background:rgb(13, 14, 11);
   text-align: center;
-  position: absolute;
-  align-items: center;
+  position: fixed;
+  bottom: 0;
   width: 100%;
-
 }
 
-.footer .share{
-  padding-top: 2rem;
+#footer .share{
   display: flex;
   gap:1.5rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.footer .credit{
+#footer .credit{
   padding:2.5rem 1rem;
   color:#fff;
   font-weight: normal;
   font-size: 2rem;
 }
 
-.footer .credit span{
+#footer .credit span{
   color:yellow;
 }
 
